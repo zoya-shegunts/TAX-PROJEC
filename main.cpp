@@ -27,7 +27,7 @@ void getData(){
  cout<<"Marital status: ";
  cin>>status; 
  
- if(strcmp(status, "merried")==0){
+ if(strcmp(status, "married")==0){
      cout<<"The number of children under the age of 14: ";
       cin>>childNum;
            cout<<"the total gross salary of the 2 of you: ";
@@ -45,7 +45,7 @@ else{
 
 double taxAmount(const char* status, int children, int salary, int pensionFund){
     double tax=0;
-    if(strcmp(status, "merried")==0 && children == 2){
+    if(strcmp(status, "married")==0 && children == 2){
         tax=7000+1500*(2+children);
     }
     else{
